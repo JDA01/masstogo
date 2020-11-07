@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body id="home">
+
+
+    <!-- NAV -->
+    <nav id="main-nav">
+
+
+        <!-- MENU LOGO -->
+        <a href="#home" class="logo">
+            <img src="/dist/images/logo.PNG" alt="">
+        </a>
+
+
+        <!-- DESKTOP MENU -->
+        <!-- <ul class="desktop-menu">
+                    <li><a href="#home" id="home-link">Home</a></li>
+                    <li><a href="#about" id="about-link">About</a></li>
+                    <li><a href="#services" id="services-link">Services</a></li>
+                    <li><a href="#contact" id="contact-link">Contact</a></li>
+                </ul> -->
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+
+            <!-- NAVIGATION LINKS -->
+            <a href="#bio" data-bio id="bio-link">Bio</a>
+            <a href="#benefits" data-benefits id="benefits-link">Benefits</a>
+            <a href="#contact" data-contact id="contact-link">Contact</a>
+            <div class="lang-opt">
+                <span class="active-lang" id="en">EN</span><span id="fr">FR</span>
+            </div>
+
+        </div>
+
+        <!-- TOGGLER BUTTON -->
+        <div class="toggler-wrap">
+            <div class="toggler-btn"></div>
+        </div>
+
+
+    </nav>
+
+
+
+    <div class="container">
+
+        <section id="bio">
+            <div class="bio-img">
+                <img src="dist/images/marco.jpg" alt="">
+            </div>
+            <div class="bio-text">
+                <h2 class="section-title">Bio</h2>
+                <p class="section-text" data-bioP1>
+                    Marcos Escobar is a massage therapist, owner and CEO of Masso To-Go!
+
+                </p>
+                <p class="section-text" data-bioP2>
+                    He studied in building design and then began his career as a technician in civil engineering.
+                </p>
+                <p class="section-text hide-show" data-bioP3 id="extra-text">
+                    Since he was very young, Marcos has always shown an interest in the field of sport (former
+                    goalkeeper,
+                    on ice, cosom and DEK). After 5 years of career in civil engineering, he decided to study at the AMS
+                    to
+                    learn the function and movements of muscle biomechanics. Graduate of the Academy of Scientific
+                    Massage:
+                    Massage Therapist Practitioner and Sports Massage (Swedish massage and sports).
+                </p>
+                <p class="section-text hide-show" data-bioP4 id="extra-text">
+                    "I think sports, physical activity and gym is the key to easing our stress"
+                </p>
+                <p class="mainName hide-show">-Marcos Escobar</p>
+            </div>
+            <span><a href="#" class="btn" id="expandCollapse"><i class="fas fa-plus"></i></a></span>
+        </section>
+
+        <section id="benefits">
+            <!-- SECTION TITLE -->
+            <h2 class="section-title">benefits</h2>
+
+            <!-- MASSAGE INFO  -->
+            <div class="massage">
+
+                <img src="dist/images/rock-massage.jpg" alt="massage">
+
+                <div>
+                    <h3><span class="main-char">m</span>assage</h3>
+                    <p class="lead  section-text" data-massP1>
+                        Massage increases blood and lymphatic flow as well as toxins’ elimination. It can be practiced
+                        both for therapeutic or relaxation purposes. The Swedish massage allows relaxation as well as
+                        mind rest. Particularly soothing, it is recognized for its ability to lessen the effects of
+                        stress on the body.
+                    </p>
+                    <a href="https://rmpq.ca/en/techniques-and-benefits-of-massage-therapy/recognized-massage-techniques/swedish-massage/"
+                        target="_blank" class="learn-more" id="readMore" data-learnMore>read more</a>
+                </div>
+
+
+            </div>
+            <div class="sport-massage">
+
+                <img src="dist/images/gym.jpg" alt="massage">
+
+                <div>
+                    <h3><span class="main-char">s</span>ports <span class="main-char">m</span>assage</h3>
+                    <p class="lead section-text" data-sportsP1>
+                        Before the effort, the massage prepares the muscles to perform while avoiding injuries. After
+                        the effort, it prevents aches and relaxes the muscles, allowing the body to relax for better
+                        recovery. Massage can also be performed during an activity or a competition, when the athlete is
+                        taking a break and the therapist is allowed to work on a cramp or aches resulting from the
+                        effort and muscular fatigue.
+                    </p>
+                    <a href="https://rmpq.ca/techniques-et-bienfaits-de-la-massotherapie/techniques-reconnues/massage-sportif/"
+                        target="_blank" class="learn-more" id="readMore" data-learnMore>read more</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="inner-contact">
+                <div class="details">
+                    <h1 class="section-title">contact</h1>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone icon"></i>
+                            <a href="tel:1-514-123-4567" class="info">514-123-4567</a>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope icon"></i>
+                            <a href="mailto:marco@gmail" target="_blank" class="info">marco@gmail</a>
+                        </li>
+                    </ul>
+
+                    <div class="contact-social">
+                        <h3 data-followUs>follow us</h3>
+                        <a href="https://www.instagram.com/masso_togo/?hl=en" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/massotogo/reviews/?ref=page_internal" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OSMy_-zTEwDseuFLbSA2iy0MxG-YyT9M"
+                        width="640" height="480"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="testimonials">
+
+        <div class="inner-testimonials">
+            <div class="review">
+                <div class="testimonials-card">
+                    <div class="quotes"><i class="fas fa-quote-left"></i></div>
+                    <p id="review">Very professional, really gifted, really patient and relaxing, highly recommend 100 %👍</p>
+                    <span class="name">-patrick castillo</span>
+                </div>
+                <div class="testimonials-card">
+                    <div class="quotes"><i class="fas fa-quote-left"></i></div>
+                    <p id="review">Very professional, highly recommend it</p>
+                    <span class="name">-nancy delisle</span>
+                </div>
+                <div class="testimonials-card">
+                    <div class="quotes"><i class="fas fa-quote-left"></i></div>
+                    <p id="review">great service and professional</p>
+                    <span class="name">-pito gonzalez</span>
+                </div>
+                <div class="testimonials-card">
+                    <div class="quotes"><i class="fas fa-quote-left"></i></div>
+                    <p id="review">really talented and very friendly you will love it!</p>
+                    <span class="name">-sam lanthier</span>
+                </div>
+            </div>
+            <div class="testimonials-photo">
+                <img src="dist/images/towels.jpg" alt="towels">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.instagram.com/masso_togo/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/massotogo/reviews/?ref=page_internal" target="_blank"><i
+                        class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="footer-menu">
+                <a href="#bio" data-bio id="bio-link">Bio</a>
+                <a href="#benefits" data-benefits id="benefits-link">Benefits</a>
+                <a href="#contact" data-contact id="contact-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="/dist/js/app.js"></script>
+</body>
+
+</html>

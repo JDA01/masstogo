@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+nav {
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 1s;
+}
+
+nav .mobile-menu {
+  height: 0;
+  background: #fff;
+  transition: height .5s ease-in-out;
+  line-height: 1.4;
+}
+
+nav .mobile-menu a {
+  display: block;
+  text-align: center;
+  color: #d9b00d;
+  margin: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+}
+
+nav .mobile-menu .lang-opt {
+  display: flex;
+  justify-content: center;
+  color: #d9b00d;
+}
+
+nav .mobile-menu .lang-opt span {
+  padding: .2rem;
+  margin: .3rem;
+  font-size: 1rem;
+}
+
+nav .mobile-menu a:hover,
+nav .mobile-menu a:active {
+  letter-spacing: 3px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.toggler-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: .5rem 1rem;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.toggler-wrap .toggler-btn {
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  background: #000;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 2px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.toggler-wrap .toggler-btn:after,
+.toggler-wrap .toggler-btn:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.toggler-wrap .toggler-btn:before {
+  transform: translateY(-16px);
+}
+
+.toggler-wrap .toggler-btn:after {
+  transform: translateY(16px);
+}
+
+.open .toggler-btn {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.open .toggler-btn:before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.open .toggler-btn:after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Quicksand, sans-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f9f4;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 .5rem;
+  margin: 0 auto;
+}
+
+.main-char {
+  color: #d9b00d;
+}
+
+.icon {
+  display: inline-block;
+  color: #d9b00d;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.info {
+  color: #797a7e;
+  font-weight: 700;
+}
+
+.btn {
+  padding: .5rem 1rem;
+  box-shadow: 0 2px 10px rgba(121, 122, 126, 0.7);
+  text-transform: uppercase;
+}
+
+.learn-more {
+  background: #d9b00d;
+  color: #fff;
+  padding: .2rem .5rem;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #797a7e;
+  border-right: 1px solid #d9b00d;
+  border-bottom: 1px solid #d9b00d;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.section-text {
+  margin: 1rem;
+  line-height: 1.6;
+}
+
+.active-lang {
+  color: #fff;
+  background: #d9b00d;
+}
+
+.hide-show {
+  display: none;
+}
+
+#bio {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+#bio .bio-img img {
+  width: 80%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+#bio .bio-text {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+#bio a {
+  color: #797a7e;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+}
+
+#bio i {
+  color: #d9b00d;
+}
+
+#bio .mainName {
+  text-align: center;
+  color: #d9b00d;
+}
+
+.benefits h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: .5rem;
+}
+
+.benefits a:hover {
+  color: #d9b00d;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.massage,
+.sport-massage {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.massage img,
+.sport-massage img {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.sport-massage img {
+  height: 350px;
+}
+
+.inner-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-contact .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-top: 20px solid #d9b00d;
+}
+
+.inner-contact .details ul {
+  list-style: none;
+}
+
+.inner-contact .details ul li {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.inner-contact .details .contact-social h3 {
+  text-align: center;
+  color: #797a7e;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.inner-contact .details .contact-social a {
+  display: inline-block;
+  padding: .4rem;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  margin: .5rem .5rem 0 0;
+  border-radius: 10px;
+}
+
+.inner-contact .details .contact-social a:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.inner-contact .details .contact-social a i {
+  color: #d9b00d;
+  font-size: 1.8rem;
+}
+
+.inner-contact .map iframe {
+  width: 100%;
+}
+
+#testimonials {
+  padding: 2rem;
+}
+
+#testimonials .inner-testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials .inner-testimonials .review {
+  position: relative;
+}
+
+#testimonials .inner-testimonials .review .testimonials-card {
+  background: #fff;
+  width: 250px;
+  border-radius: 10%;
+  margin: 2rem;
+  position: relative;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.8);
+}
+
+#testimonials .inner-testimonials .review .testimonials-card .quotes {
+  width: 20%;
+  text-align: center;
+  background: #000;
+  border: 1px solid #fff;
+  padding: .5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 95px;
+}
+
+#testimonials .inner-testimonials .review .testimonials-card p {
+  padding: 1.5rem .7rem .5rem .7rem;
+  text-align: center;
+}
+
+#testimonials .inner-testimonials .review .testimonials-card .quotes i {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+#testimonials .inner-testimonials .review .testimonials-card .name {
+  display: block;
+  color: #d9b00d;
+  text-align: right;
+  text-transform: capitalize;
+  padding: .5rem;
+}
+
+#testimonials .inner-testimonials .testimonials-photo {
+  width: 100%;
+}
+
+#testimonials .inner-testimonials .testimonials-photo img {
+  width: 100%;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+footer {
+  background: #000;
+  display: flex;
+}
+
+footer .footer-social,
+footer .footer-menu {
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-social a {
+  padding: .5rem .7rem 0 0;
+  color: #fff;
+}
+
+footer .footer-social a i {
+  font-size: 1.2rem;
+}
+
+footer .footer-menu a {
+  color: #d9b00d;
+  padding: .5rem;
+  letter-spacing: 3px;
+}
+
+footer .footer-menu a:hover,
+footer .footer-social a:hover {
+  color: #000;
+}
